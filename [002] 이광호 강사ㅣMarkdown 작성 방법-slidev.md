@@ -1,5 +1,5 @@
 ---
-theme: ./hossam
+theme: ./slidev-themes/hossam
 title: Markdown · 작성 방법
 layout: cover
 ---
