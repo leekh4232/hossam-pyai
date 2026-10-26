@@ -93,7 +93,217 @@ GitHub의 README, 주피터 노트북의 설명 셀, 노션도 모두 마크다�
 
 ---
 
-## 1. VS Code 준비 — 확장 두 개
+## 1. VS Code 준비 — Visual Studio Code 설치하기
+
+- **Visual Studio Code**는 Microsoft가 만들어 무료로 배포하는 IDE(코딩 작업 통합 프로그램)다
+- 여러 프로그래밍 언어를 지원해서 IDE 중에서 가장 인기가 높다
+- 익스텐션(확장팩)을 설치해 기능을 늘릴 수 있다
+
+<div class="fill-img"><img src="./img/002/vscode-overview.png" alt="Visual Studio Code에서 코드를 편집하는 화면" /></div>
+
+---
+
+### VS Code 내려받기
+
+<Steps>
+<li><a href="https://code.visualstudio.com">https://code.visualstudio.com</a> 에 접속한다</li>
+<li>화면의 <b>Download</b> 버튼을 눌러 설치 프로그램을 내려받는다</li>
+<li>내려받은 프로그램을 실행해 설치를 진행한다 (특별한 설정은 없다)</li>
+</Steps>
+
+<div class="fill-img"><img src="./img/002/vscode-download.png" alt="VS Code 홈페이지의 Download 버튼. 누르면 페이지가 이동하고 2~3초 뒤 다운로드가 시작된다" /></div>
+
+---
+
+### VS Code 설치 과정
+
+<Grid cols="3">
+<div>
+
+<div class="kicker">1. 사용권 계약 동의 → 다음</div>
+
+<img src="./img/002/vscode-install-step1.png" alt="사용권 계약에서 동의합니다를 고르고 다음 누르기" style="max-height: 190px;" />
+
+</div>
+<div>
+
+<div class="kicker">2. 설치 위치 확인 → 다음</div>
+
+<img src="./img/002/vscode-install-step2.png" alt="설치 위치를 그대로 두고 다음 누르기" style="max-height: 190px;" />
+
+</div>
+<div>
+
+<div class="kicker">3. 시작 메뉴 폴더 → 다음</div>
+
+<img src="./img/002/vscode-install-step3.png" alt="시작 메뉴 폴더를 그대로 두고 다음 누르기" style="max-height: 190px;" />
+
+</div>
+<div>
+
+<div class="kicker">4. 추가 작업 모두 체크 → 다음</div>
+
+<img src="./img/002/vscode-install-step4.png" alt="바탕 화면 바로가기, Code로 열기, PATH에 추가 항목을 모두 체크하고 다음 누르기" style="max-height: 190px;" />
+
+</div>
+<div>
+
+<div class="kicker">5. 설치 누르기</div>
+
+<img src="./img/002/vscode-install-step5.png" alt="설치 준비 완료 화면에서 설치 누르기" style="max-height: 190px;" />
+
+</div>
+<div>
+
+<div class="kicker">6. 설치 진행 중</div>
+
+<img src="./img/002/vscode-install-step6.png" alt="설치 진행 막대가 차오르는 화면" style="max-height: 190px;" />
+
+</div>
+</Grid>
+
+---
+
+### 설치 종료 및 실행
+
+설치 프로그램에서 **종료**를 누르면 Visual Studio Code가 바로 실행된다.
+
+<div class="fill-img"><div class="fill-in">
+<figure><div class="pic"><img src="./img/002/vscode-install-finish.png" alt="설치 마법사 완료 화면에서 Visual Studio Code 실행에 체크하고 종료 누르기" /></div></figure>
+<figure><div class="pic"><img src="./img/002/vscode-first-run.png" alt="처음 실행된 VS Code의 Welcome 화면" /></div></figure>
+</div></div>
+
+---
+
+### 익스텐션 설치 — 한국어
+
+익스텐션은 VS Code의 기능을 늘리기 위해 설치하는 작은 프로그램이다.
+
+<div class="fill-img"><div class="fill-in">
+<div class="fill-text">
+
+<Steps>
+<li>왼쪽의 익스텐션 아이콘(네모 네 개)을 누른다</li>
+<li>검색창에 <b>Korean</b>을 입력한다</li>
+<li>Microsoft가 만든 <b>Korean Language Pack</b>을 설치한다</li>
+<li>오른쪽 아래에 뜨는 <b>Change Language and Restart</b>를 눌러 다시 실행한다</li>
+</Steps>
+
+</div>
+<figure style="flex-grow: 1.5"><div class="pic"><img src="./img/002/ext-korean.png" alt="익스텐션 창에서 Korean을 검색해 한국어 팩을 설치하고 재시작 버튼 누르기" /></div></figure>
+</div></div>
+
+---
+
+### 환경 설정 ① 글자 크기
+
+기본 글자 크기가 조금 작으니 **16**으로 바꾼다. 코딩하면서 내 눈에 맞게 다시 조절해도 된다.
+
+<div class="fill-img"><div class="fill-in">
+<div class="fill-text">
+
+<Steps>
+<li>왼쪽 아래 톱니바퀴를 누른다</li>
+<li><b>설정</b>을 고른다</li>
+<li><b>Editor: Font Size</b> 칸에 <code>16</code>을 입력한다</li>
+</Steps>
+
+</div>
+<figure style="flex-grow: 1.5"><div class="pic"><img src="./img/002/setting-font-size.png" alt="톱니바퀴 → 설정 → Editor: Font Size에 16 입력" /></div></figure>
+</div></div>
+
+---
+
+### 환경 설정 ② 아이콘 테마 설치
+
+- 검색해 보면 여러 아이콘 테마가 있다. 가장 많이 쓰는 것은 **Material Icon Theme**다
+- 설치가 끝나면 화면 위쪽에 테마를 고르는 목록이 뜬다
+
+<div class="fill-img"><div class="fill-in">
+<div class="fill-text">
+
+<Steps>
+<li>익스텐션 아이콘을 누른다</li>
+<li>검색창에 <b>Icon</b>을 입력한다</li>
+<li><b>Material Icon Theme</b>을 설치한다</li>
+</Steps>
+
+</div>
+<figure style="flex-grow: 1.5"><div class="pic"><img src="./img/002/ext-material-icon.png" alt="익스텐션 창에서 Icon을 검색해 Material Icon Theme 설치하기" /></div></figure>
+</div></div>
+
+---
+
+### 환경 설정 ③ 아이콘 테마 고르기
+
+이미 설치된 아이콘 테마 중에서 고를 때는 아래 순서로 연다.
+
+<div class="fill-img"><div class="fill-in">
+<figure><div class="kicker">톱니바퀴 → 테마 → 파일 아이콘 테마</div><div class="pic"><img src="./img/002/icon-theme-menu.png" alt="톱니바퀴 메뉴에서 테마, 파일 아이콘 테마 순서로 열기" /></div></figure>
+<figure><div class="kicker">목록에서 Material Icon Theme 선택</div><div class="pic"><img src="./img/002/icon-theme-select.png" alt="파일 아이콘 테마 목록에서 Material Icon Theme 고르기" /></div></figure>
+</div></div>
+
+---
+
+### 환경 설정 ④ 아이콘 테마 확인
+
+기본 상태에서는 폴더와 파일을 구분하기 어렵지만, 아이콘 테마를 적용하면 **파일 종류가 한눈에 보인다**.
+
+<div class="fill-img"><div class="fill-in">
+<figure><div class="kicker">설치 전</div><div class="pic"><img src="./img/002/icon-theme-before.png" alt="아이콘 테마 적용 전 탐색기. 폴더와 파일이 글자만으로 구분된다" /></div></figure>
+<figure><div class="kicker">설치 후</div><div class="pic"><img src="./img/002/icon-theme-after.png" alt="아이콘 테마 적용 후 탐색기. 폴더와 파일마다 종류별 아이콘이 붙는다" /></div></figure>
+</div></div>
+
+---
+
+### 환경 설정 ⑤ 색상 테마
+
+데이터 분석 코드는 **밝은 테마**에서 더 잘 읽히므로 바꾸는 것을 추천한다. 취향에 따라 어두운 테마를 써도 된다.
+
+<div class="fill-img"><div class="fill-in">
+<figure><div class="kicker">톱니바퀴 → 테마 → 색 테마</div><div class="pic"><img src="./img/002/color-theme-menu.png" alt="톱니바퀴 메뉴에서 테마, 색 테마 순서로 열기" /></div></figure>
+<figure><div class="kicker">밝게(Visual Studio) 선택</div><div class="pic"><img src="./img/002/color-theme-select.png" alt="색 테마 목록에서 밝게(Visual Studio) 고르기" /></div></figure>
+</div></div>
+
+---
+
+### VS Code 삭제하기 ① 설정 앱 열기
+
+윈도우의 **설정** 앱을 실행하고 **앱**으로 들어간다.
+
+<div class="fill-img"><img src="./img/002/uninstall-settings-app.png" alt="윈도우 설정 앱에서 앱 메뉴 선택" /></div>
+
+---
+
+### VS Code 삭제하기 ② 프로그램 제거
+
+**앱 및 기능** 목록에서 **Microsoft Visual Studio Code**를 찾아 **제거**를 누른다.
+
+<div class="fill-img"><img src="./img/002/uninstall-apps.png" alt="앱 및 기능 목록에서 Microsoft Visual Studio Code 제거" /></div>
+
+---
+
+### VS Code 삭제하기 ③ 설정 폴더 지우기
+
+<div class="fill-img"><div class="fill-in">
+<div class="fill-text">
+
+<Steps>
+<li>사용자 홈 폴더(<code>C:\사용자\계정명</code> 또는 <code>C:\Users\계정명</code>)를 연다</li>
+<li><code>.vscode</code> 폴더를 삭제한다</li>
+</Steps>
+
+<Callout kind="warn">
+프로그램만 지우면 설정과 익스텐션이 이 폴더에 남는다. 다시 설치했을 때 예전 문제가 그대로 따라오지 않게 <b>반드시</b> 함께 지운다.
+</Callout>
+
+</div>
+<figure style="flex-grow: 1.5"><div class="pic"><img src="./img/002/uninstall-vscode-folder.png" alt="사용자 홈 폴더에서 .vscode 폴더 삭제" /></div></figure>
+</div></div>
+
+---
+
+### 마크다운을 위한 익스텐션 설치
 
 | 확장 | 만든 사람 | 하는 일 |
 |:--|:--|:--|
@@ -505,25 +715,50 @@ ___
 
 역따옴표(`` ` ``) 세 개로 코드를 위아래에서 감싸고 여는 쪽 뒤에 언어 이름을 쓴다. 역따옴표는 키보드 `1` 왼쪽, `~` 와 같은 키에 있다.
 
+<Grid cols="2">
+<div>
+
+<div class="kicker">Python</div>
+
 ````md
 ```python
-def hello_world():
-    for i in range(5):
-        print(f"Hello World {i+1}")
-
-hello_world()
+for i in range(3):
+    print("Hello", i)
 ```
 ````
 
 <div class="kicker">미리보기</div>
 
 ```python
-def hello_world():
-    for i in range(5):
-        print(f"Hello World {i+1}")
-
-hello_world()
+for i in range(3):
+    print("Hello", i)
 ```
+
+</div>
+<div>
+
+<div class="kicker">SQL</div>
+
+````md
+```sql
+SELECT name, score
+FROM students
+WHERE score >= 90
+ORDER BY score DESC;
+```
+````
+
+<div class="kicker">미리보기</div>
+
+```sql
+SELECT name, score
+FROM students
+WHERE score >= 90
+ORDER BY score DESC;
+```
+
+</div>
+</Grid>
 
 ---
 
@@ -690,7 +925,7 @@ $$
 ## 좋아하는 것
 
 - 산책
-- **파이썬**
+- **음악 감상**
 - 떡볶이
 
 ## 이번 주 할 일
@@ -719,3 +954,90 @@ $$
 | 수식 | `$문장 속$` · `$$따로 한 줄$$` |
 
 <span class="muted">기호 뒤 공백 한 칸과 빈 줄 하나, 이 두 가지만 지켜도 대부분 제대로 나온다.</span>
+
+---
+
+## 연습문제 — 고장 난 마크다운 고치기
+
+아래는 `practice.md` 에 쓴 수업 노트인데 미리보기가 엉망으로 나온다. **틀린 곳 7군데**를 찾아 고쳐 보자.
+
+<Grid cols="2">
+<div>
+
+```md
+#마크다운 1일차 노트
+
+## 오늘 한 일
+
+1.VS Code 설치
+    - 한국어 팩
+  - Markdown All in One 익스텐션
+1. **공식 홈페이지 둘러보기
+
+## 점검
+
+| 항목 | 상태 |
+| 글자 크기 16 | 완료 |
+
+-[x] practice.md 만들기
+- [] 첫 코드 실행
+```
+
+</div>
+<div>
+
+<Steps color="ok">
+<li>VS Code에서 <code>practice.md</code> 를 만들고 왼쪽 코드를 그대로 붙여 넣는다</li>
+<li><code>Ctrl + K</code> → <code>V</code> 로 미리보기를 옆에 띄운다</li>
+<li>미리보기를 보며 제목, 목록, 굵은 글씨, 표, 체크박스가 제대로 나올 때까지 고친다</li>
+</Steps>
+
+<Callout kind="tip" title="힌트">
+대부분 <b>기호 뒤 공백 한 칸</b>, <b>들여쓰기 칸 수</b>, <b>짝이 맞지 않는 기호</b> 문제다. 막히면 <b>14. 자주 틀리는 것</b>과 <b>정리 — 한 장 요약</b>을 다시 본다.
+</Callout>
+
+</div>
+</Grid>
+
+---
+
+### 연습문제 — 정답
+
+<Grid cols="2">
+<div>
+
+```md
+# 마크다운 1일차 노트
+
+## 오늘 한 일
+
+1. VS Code 설치
+    - 한국어 팩
+    - Markdown All in One 익스텐션
+1. **공식 홈페이지** 둘러보기
+
+## 점검
+
+| 항목 | 상태 |
+|:--|:--|
+| 글자 크기 16 | 완료 |
+
+- [x] practice.md 만들기
+- [ ] 첫 코드 실행
+```
+
+</div>
+<div>
+
+| 줄 | 고친 내용 |
+|:--|:--|
+| 1 | `#` 뒤에 공백 |
+| 5 | `1.` 뒤에 공백 |
+| 7 | 들여쓰기를 위 항목과 같은 4칸으로 |
+| 8 | 닫는 `**` 추가 |
+| 13 | 표의 구분 줄 `\|:--\|:--\|` 추가 |
+| 16 | `-` 뒤에 공백 |
+| 17 | `[ ]` 안에 공백 |
+
+</div>
+</Grid>
