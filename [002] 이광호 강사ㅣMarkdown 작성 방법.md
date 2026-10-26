@@ -99,6 +99,7 @@ GitHub의 README, 주피터 노트북의 설명 셀, 노션도 모두 마크다�
 |:--|:--|:--|
 | Markdown All in One | Yu Zhang | 문법 강조, 단축키, 목차 자동 생성 |
 | Markdown Preview Github Styling | Matt Bierner | 미리보기를 GitHub 화면처럼 보여 줌 |
+| Ipynb PDF converter | leekh | 마크다운 파일을 pdf 문서로 변환 |
 
 VS Code 왼쪽의 확장 아이콘(네모 네 개)을 누르고 이름으로 검색해 설치한다.
 
