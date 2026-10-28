@@ -98,11 +98,10 @@ ChatGPT의 답에 이 표에 없는 내용이 나오면 메모만 해 두고 따
 
 ---
 hideInToc: true
+class: dense
 ---
 
 <div class="kicker ai">프롬프트 틀. 복사해서 〈 〉만 바꾼다</div>
-
-<div class="prompt-sm">
 
 <Prompt>
 
@@ -124,13 +123,6 @@ hideInToc: true
 ````
 
 </Prompt>
-
-</div>
-
-<style>
-.prompt-sm { --slidev-code-font-size: 1rem; --slidev-code-line-height: 1.35; }
-.prompt-sm :deep(.prompt-body code), .prompt-sm :deep(.prompt-body .line) { font-size: 1rem; line-height: 1.35; }
-</style>
 
 ---
 
@@ -177,13 +169,12 @@ print(a)
 
 ---
 hideInToc: true
+class: dense
 ---
 
 <div class="kicker ai">패턴 ① 프롬프트. 상황의 코드와 〈 〉만 바꾸면 다른 코드에도 그대로</div>
 
-<div class="prompt-sm">
-
-<Prompt>
+<Prompt cols="2">
 
 ````md
 ## 맥락
@@ -208,8 +199,6 @@ print(a)
 ````
 
 </Prompt>
-
-</div>
 
 ---
 
@@ -251,11 +240,10 @@ print(a)
 
 ---
 hideInToc: true
+class: dense
 ---
 
 <div class="kicker ai">패턴 ② 프롬프트. 상황의 〈 〉에 내 문장을 넣는다</div>
-
-<div class="prompt-sm">
 
 <Prompt>
 
@@ -278,8 +266,6 @@ hideInToc: true
 ````
 
 </Prompt>
-
-</div>
 
 ---
 
@@ -325,13 +311,12 @@ hideInToc: true
 
 ---
 hideInToc: true
+class: dense
 ---
 
 <div class="kicker ai">패턴 ③ 프롬프트. 상황의 표에 내 답을 먼저 채운다</div>
 
-<div class="prompt-sm">
-
-<Prompt>
+<Prompt cols="2">
 
 ````md
 ## 맥락
@@ -357,8 +342,6 @@ hideInToc: true
 ````
 
 </Prompt>
-
-</div>
 
 ---
 
@@ -414,13 +397,12 @@ NameError: name 'true' is not defined
 
 ---
 hideInToc: true
+class: dense
 ---
 
 <div class="kicker ai">패턴 ④ 프롬프트. 코드 상자와 에러 상자만 바꾸면 어떤 에러에도 그대로</div>
 
-<div class="prompt-sm">
-
-<Prompt>
+<Prompt cols="2">
 
 ````md
 ## 맥락
@@ -447,8 +429,6 @@ NameError: name 'true' is not defined
 ````
 
 </Prompt>
-
-</div>
 
 <!--
 코드 금지 · 고친 코드 대신 말로 설명 · "내가 확인할 점" · 에러 답의 순서는 전부 ChatGPT 지침(2장 · 3-3 · 6-5)에 들어 있으므로 프롬프트에 다시 적지 않는다. 답이 지침 3-3 순서(예외 종류 → 발생한 줄 → 메시지 → 원인 후보 → 확인 항목)로 오는지가 지침이 살아 있는지 보는 기준이다. "해결 방법"을 물어도 지침 2-6 때문에 고친 코드가 아니라 "어느 줄을 어떻게"가 와야 정상이다.
