@@ -1,5 +1,5 @@
 {
-  "name": "hossam-pyai",
+  "name": "lecture-pyai",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leekh4232/hossam-pyai.git"
+    "url": "git+https://github.com/leekh4232/lecture-pyai.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/leekh4232/hossam-pyai/issues"
+    "url": "https://github.com/leekh4232/lecture-pyai/issues"
   },
-  "homepage": "https://github.com/leekh4232/hossam-pyai#readme",
+  "homepage": "https://github.com/leekh4232/lecture-pyai#readme",
   "private": true,
   "devDependencies": {
     "@slidev/cli": "^53.0.0",
