@@ -1,6 +1,6 @@
 ---
 theme: ./slidev-themes/hossam
-title: AI 활용 · 바이브 코딩을 위한 AI 사용 방법
+title: 파이썬 기초 · 바이브 코딩을 위한 AI 사용 방법
 layout: cover
 ---
 
@@ -8,7 +8,7 @@ layout: cover
 
 AI 지침 설정과 올바른 프롬프트 작성 방법
 
-<p class="sub">이광호 강사</p>
+<p class="sub">[LAB-00] AI의 이해 1 · 이광호 강사</p>
 
 ---
 
@@ -465,4 +465,4 @@ hideInToc: true
 
 질문과 토론 환영
 
-<p class="sub">이광호 강사</p>
+<p class="sub">[LAB-00] AI의 이해 1 · 이광호 강사</p>
