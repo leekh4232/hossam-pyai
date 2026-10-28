@@ -1,5 +1,7 @@
 ---
 theme: ./slidev-themes/hossam
+colorMode: dark
+fontScale: 1
 title: 파이썬 기초 · Markdown의 이해와 활용
 layout: cover
 ---
@@ -8,7 +10,7 @@ layout: cover
 
 기호 몇 개로 글에 제목, 목록, 표, 코드를 붙이는 법
 
-<p class="sub">[LAB-00] AI의 이해 2 · {teacher} 강사</p>
+<p class="sub">[LAB-00] AI의 이해 2 · ITWILL · {teacher} 강사</p>
 
 ---
 layout: infographic
