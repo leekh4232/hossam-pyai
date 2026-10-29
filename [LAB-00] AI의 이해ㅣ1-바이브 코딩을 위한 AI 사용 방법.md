@@ -282,7 +282,7 @@ layout: cards
 </div>
 <div>
 
-<Steps style="counter-reset: step 3">
+<Steps start="4">
 <li>붙여 넣은 코드를 고쳐서 돌려주지 않기</li>
 <li>사실 / 추론 / 추측 구분 표시</li>
 <li>답변 끝에 "내가 확인할 점" 2~3줄</li>
@@ -306,7 +306,7 @@ layout: cards
 
 ### #08-2. ChatGPT 지침 설정 ② 지침 입력
 
-<Steps style="counter-reset: step 2">
+<Steps start="3">
 <li>설정 창 왼쪽에서 <b>개인 맞춤 설정</b> 선택</li>
 <li><b>사용자 지정 지침</b> 칸에 지침 붙여 넣기</li>
 </Steps>
