@@ -47,11 +47,6 @@ class: tight
 <li><carbon:bot /><b>AI · 도구가 읽는다</b><span>ChatGPT · Claude · GitHub · 노션</span></li>
 </Flow>
 
-<style>
-/* 왼쪽 코드 상자의 윗여백을 없애 오른쪽 타일과 윗선을 맞춘다 */
-.grid-box .slidev-code { margin-top: 0; }
-</style>
-
 ---
 class: tight
 ---
@@ -177,42 +172,42 @@ GitHub의 README, 주피터 노트북의 설명 셀, 노션도 모두 마크다�
 
 <div class="kicker">1. 사용권 계약 동의 → 다음</div>
 
-<img src="./img/002/vscode-install-step1.png" alt="사용권 계약에서 동의합니다를 고르고 다음 누르기" style="max-height: 190px;" />
+<img src="./img/002/vscode-install-step1.png" alt="사용권 계약에서 동의합니다를 고르고 다음 누르기" class="max-h-[190px]" />
 
 </div>
 <div>
 
 <div class="kicker">2. 설치 위치 확인 → 다음</div>
 
-<img src="./img/002/vscode-install-step2.png" alt="설치 위치를 그대로 두고 다음 누르기" style="max-height: 190px;" />
+<img src="./img/002/vscode-install-step2.png" alt="설치 위치를 그대로 두고 다음 누르기" class="max-h-[190px]" />
 
 </div>
 <div>
 
 <div class="kicker">3. 시작 메뉴 폴더 → 다음</div>
 
-<img src="./img/002/vscode-install-step3.png" alt="시작 메뉴 폴더를 그대로 두고 다음 누르기" style="max-height: 190px;" />
+<img src="./img/002/vscode-install-step3.png" alt="시작 메뉴 폴더를 그대로 두고 다음 누르기" class="max-h-[190px]" />
 
 </div>
 <div>
 
 <div class="kicker">4. 추가 작업 모두 체크 → 다음</div>
 
-<img src="./img/002/vscode-install-step4.png" alt="바탕 화면 바로가기, Code로 열기, PATH에 추가 항목을 모두 체크하고 다음 누르기" style="max-height: 190px;" />
+<img src="./img/002/vscode-install-step4.png" alt="바탕 화면 바로가기, Code로 열기, PATH에 추가 항목을 모두 체크하고 다음 누르기" class="max-h-[190px]" />
 
 </div>
 <div>
 
 <div class="kicker">5. 설치 누르기</div>
 
-<img src="./img/002/vscode-install-step5.png" alt="설치 준비 완료 화면에서 설치 누르기" style="max-height: 190px;" />
+<img src="./img/002/vscode-install-step5.png" alt="설치 준비 완료 화면에서 설치 누르기" class="max-h-[190px]" />
 
 </div>
 <div>
 
 <div class="kicker">6. 설치 진행 중</div>
 
-<img src="./img/002/vscode-install-step6.png" alt="설치 진행 막대가 차오르는 화면" style="max-height: 190px;" />
+<img src="./img/002/vscode-install-step6.png" alt="설치 진행 막대가 차오르는 화면" class="max-h-[190px]" />
 
 </div>
 </Grid>
@@ -245,7 +240,7 @@ GitHub의 README, 주피터 노트북의 설명 셀, 노션도 모두 마크다�
 </Steps>
 
 </div>
-<figure style="flex-grow: 1.5"><div class="pic"><img src="./img/002/ext-korean.png" alt="익스텐션 창에서 Korean을 검색해 한국어 팩을 설치하고 재시작 버튼 누르기" /></div></figure>
+<figure class="grow-1.5"><div class="pic"><img src="./img/002/ext-korean.png" alt="익스텐션 창에서 Korean을 검색해 한국어 팩을 설치하고 재시작 버튼 누르기" /></div></figure>
 </div></div>
 
 ---
@@ -264,7 +259,7 @@ GitHub의 README, 주피터 노트북의 설명 셀, 노션도 모두 마크다�
 </Steps>
 
 </div>
-<figure style="flex-grow: 1.5"><div class="pic"><img src="./img/002/setting-font-size.png" alt="톱니바퀴 → 설정 → Editor: Font Size에 16 입력" /></div></figure>
+<figure class="grow-1.5"><div class="pic"><img src="./img/002/setting-font-size.png" alt="톱니바퀴 → 설정 → Editor: Font Size에 16 입력" /></div></figure>
 </div></div>
 
 ---
@@ -284,7 +279,7 @@ GitHub의 README, 주피터 노트북의 설명 셀, 노션도 모두 마크다�
 </Steps>
 
 </div>
-<figure style="flex-grow: 1.5"><div class="pic"><img src="./img/002/ext-material-icon.png" alt="익스텐션 창에서 Icon을 검색해 Material Icon Theme 설치하기" /></div></figure>
+<figure class="grow-1.5"><div class="pic"><img src="./img/002/ext-material-icon.png" alt="익스텐션 창에서 Icon을 검색해 Material Icon Theme 설치하기" /></div></figure>
 </div></div>
 
 ---
@@ -353,7 +348,7 @@ GitHub의 README, 주피터 노트북의 설명 셀, 노션도 모두 마크다�
 </Callout>
 
 </div>
-<figure style="flex-grow: 1.5"><div class="pic"><img src="./img/002/uninstall-vscode-folder.png" alt="사용자 홈 폴더에서 .vscode 폴더 삭제" /></div></figure>
+<figure class="grow-1.5"><div class="pic"><img src="./img/002/uninstall-vscode-folder.png" alt="사용자 홈 폴더에서 .vscode 폴더 삭제" /></div></figure>
 </div></div>
 
 ---
