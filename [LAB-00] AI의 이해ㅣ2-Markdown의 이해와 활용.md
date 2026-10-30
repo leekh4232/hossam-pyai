@@ -13,71 +13,68 @@ layout: cover
 <p class="sub">[LAB-00] AI의 이해 2 · ITWILL · {teacher} 강사</p>
 
 ---
-layout: infographic
+class: tight
 ---
 
 ## #01. 마크다운이란 — AI와 주고받는 글의 서식
 
-<div class="kicker">기호로 서식을 표시하는 글쓰기 규칙 — AI를 쓸 때는 사람과 AI가 같이 읽는 공용 서식이 된다</div>
+<p>기호 몇 개로 서식을 표시하는 <span class="hl py">글쓰기 규칙</span>. 사람도 AI도 그대로 읽는 <b>공용 서식</b>이다.</p>
 
-<Flow>
+<Grid cols="2" gap="16" align="start">
+<div>
+
+<div class="kicker">이렇게 쓰면</div>
+
+```md
+# 오늘 할 일
+- 데이터 결측치 확인
+- 결과는 **표로** 정리
+```
+
+</div>
+<div>
+
+<div class="kicker ok">이렇게 보인다</div>
+
+<Tile kind="soft" color="ok" title="오늘 할 일"><ul><li>데이터 결측치 확인</li><li>결과는 <b>표로</b> 정리</li></ul></Tile>
+
+</div>
+</Grid>
+
+<Flow color="pastel">
 <li><carbon:user-avatar /><b>사람이 쓴다</b><span><code>#</code> <code>-</code> <code>**</code> 기호로 서식을 표시</span></li>
-<li><carbon:document /><b>마크다운 문서</b><span>그냥 텍스트 파일(<code>.md</code>)</span></li>
+<li><carbon:document /><b>.md 파일</b><span>메모장에서도 열리는 단순 텍스트</span></li>
 <li><carbon:bot /><b>AI · 도구가 읽는다</b><span>ChatGPT · Claude · GitHub · 노션</span></li>
 </Flow>
 
-<Grid cols="4">
-<div class="card py"><h3><carbon:chat /> 답이 마크다운</h3><p>AI 답변의 서식</p></div>
-<div class="card py"><h3><carbon:send-alt /> 프롬프트도 md로</h3><p>지시와 자료 구분</p></div>
-<div class="card ok"><h3><carbon:table /> 결과 모양 지정</h3><p>"표로" · "체크리스트로"</p></div>
-<div class="card ai"><h3><carbon:rule /> 규칙서도 .md</h3><p>CLAUDE.md 등</p></div>
-</Grid>
+<style>
+/* 왼쪽 코드 상자의 윗여백을 없애 오른쪽 타일과 윗선을 맞춘다 */
+.grid-box .slidev-code { margin-top: 0; }
+</style>
 
 ---
-layout: cards
-cols: 2
+class: tight
 ---
 
 ### #01-1. AI 시대, 마크다운의 의미
 
-<div class="kicker">"가벼운 서식 문법"에서 "사람과 AI의 공용어"로 — 구조를 가진 생각을 담는 최소 단위</div>
+<p>"가벼운 서식 문법"에서 <span class="hl py">사람과 AI의 공용어</span>로. AI와 글을 주고받는 자리마다 마크다운이 있다.</p>
 
-<div class="py">
+<Timeline color="pastel">
+<li><b>AI 답변</b>마크다운으로 온다</li>
+<li><b>프롬프트</b>마크다운으로 쓴다</li>
+<li><b>출력 형식</b>표 · 체크리스트로 지정한다</li>
+</Timeline>
 
-<h4><carbon:machine-learning-model /> LLM의 모국어</h4>
+<span class="kicker">왜 마크다운인가</span>
 
-- 학습 데이터(README · 기술 문서 · Q&A)에 마크다운이 풍부하다
-- ChatGPT · Claude는 마크다운으로 읽고 마크다운으로 답한다
-- 제목 · 목록으로 구조를 갖춰 주면 더 정확히 이해한다
+<Grid cols="3" gap="12">
+<Tile kind="soft" color="py" tag="LLM의 모국어" title="읽는 것도, 답하는 것도">학습 자료의 대부분이 마크다운. 제목 · 목록으로 구조를 주면 더 정확히 이해한다</Tile>
+<Tile kind="soft" color="ok" tag="그냥 텍스트" title="어디서든 그대로">메모장에서도 열리는 평문이라 프로그램에 묶이지 않는다. 복사해서 바로 쓴다</Tile>
+<Tile kind="soft" color="warn" tag="원본은 한 벌" title="변환은 AI에게">내용은 마크다운 한 벌로 쓰고, PPT · PDF · 노션으로 바꾸는 일은 AI에게 맡긴다</Tile>
+</Grid>
 
-</div>
-<div class="py">
-
-<h4><carbon:view /> 사람도 기계도 그대로 읽는 텍스트</h4>
-
-- 렌더링 없이 읽히는 평문이라 프로그램에 묶이지 않는다
-- Git으로 버전을 관리하고 변경 내역을 비교한다
-- 어디든 복사해 그대로 쓴다
-
-</div>
-<div class="ok">
-
-<h4><carbon:settings-adjust /> AI 에이전트의 설정 언어</h4>
-
-- `CLAUDE.md` · `AGENTS.md` · `SKILL.md` · 시스템 프롬프트
-- AI에게 주는 지시 · 규칙 · 기억이 전부 마크다운 파일이다
-- "문서를 쓰는 일" = "AI를 프로그래밍하는 일"
-
-</div>
-<div class="ai">
-
-<h4><carbon:data-base /> 콘텐츠의 원본 (Source of Truth)</h4>
-
-- 내용은 마크다운 한 벌로 작성한다
-- PPT · PDF · HTML · Notion 변환은 AI에게 맡긴다
-- 서식은 선택지일 뿐, 남는 자산은 구조를 가진 텍스트다
-
-</div>
+<Core color="py">서식은 선택지일 뿐, 남는 자산은 <span class="hl py">구조를 가진 텍스트</span>다.</Core>
 
 ---
 class: dense
@@ -585,10 +582,17 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
 </Grid>
 
 ---
+class: tight
+---
 
-### #04-4. 순서 있는 목록
+### #04-4. 순서 있는 목록 · 순서 없는 목록
 
-<Grid cols="2">
+<Grid cols="2" gap="32" align="start">
+<div>
+
+<div class="kicker">순서 있는 목록 — 숫자와 점</div>
+
+<Grid cols="2" gap="28" align="start">
 <div>
 
 ```md
@@ -597,12 +601,6 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
 1. 면 넣기
 1. 3분 기다리기
 ```
-
-- `1.` 다음에 **한 칸 띄운다**
-- 번호를 모두 `1.` 로 써도 화면에는 1, 2, 3, 4로 나온다.
-  - `1., 2., 3., 4.` 형식으로 연속된 번호를 사용해도 무관하다.
-  - VSCode가 숫자 자동완성 기능을 지원함
-- 중간에 항목을 끼워 넣어도 번호를 고칠 필요가 없다
 
 </div>
 <div>
@@ -617,11 +615,57 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
 </div>
 </Grid>
 
+- `1.` 다음에 **한 칸 띄운다**
+- 번호를 모두 `1.` 로 써도 화면에는 1, 2, 3, 4로 나온다. 연속 번호로 써도 되고, VS Code가 번호를 자동 완성한다
+- 중간에 항목을 끼워 넣어도 번호를 고칠 필요가 없다
+
+</div>
+<div>
+
+<div class="kicker ai">순서 없는 목록 — 기호</div>
+
+<Grid cols="2" gap="28" align="start">
+<div>
+
+```md
+- 사과
+- 배
+- 오이
+- 당근
+```
+
+</div>
+<div>
+
+<div class="kicker">미리보기</div>
+
+- 사과
+- 배
+- 오이
+- 당근
+
+</div>
+</Grid>
+
+- `-` 다음에 **한 칸 띄운다**
+- `*` 를 써도 결과가 같다
+- 순서가 상관없는 것(준비물 · 재료 · 후보)을 적을 때 쓴다
+
+</div>
+</Grid>
+
+---
+class: tight
 ---
 
-### #04-5. 목록 안에 목록 넣기
+### #04-5. 목록 안에 목록 넣기 · 섞어 쓰기
 
-<Grid cols="2">
+<Grid cols="2" gap="32" align="start">
+<div>
+
+<div class="kicker">안쪽으로 밀어 넣기</div>
+
+<Grid cols="2" gap="28" align="start">
 <div>
 
 ```md
@@ -632,6 +676,21 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
     1. 수업
     1. 산책
 ```
+
+</div>
+<div>
+
+<div class="kicker">미리보기</div>
+
+1. 아침
+    1. 세수
+    1. 밥 먹기
+1. 점심
+    1. 수업
+    1. 산책
+
+</div>
+</Grid>
 
 - 하위 항목은 `Tab` 키(스페이스 4칸)로 **안쪽으로 밀어** 쓴다
 - 위아래 항목과 들여쓰기 칸 수를 맞춘다
@@ -639,58 +698,9 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
 </div>
 <div>
 
-<div class="kicker">미리보기</div>
+<div class="kicker ai">두 목록을 섞어 쓰기</div>
 
-1. 아침
-    1. 세수
-    1. 밥 먹기
-1. 점심
-    1. 수업
-    1. 산책
-
-</div>
-</Grid>
-
----
-
-### #04-6. 순서 없는 목록
-
-<Grid cols="2">
-<div>
-
-```md
-* 과일
-    - 사과
-    - 배
-- 채소
-    * 오이
-    * 당근
-```
-
-- `*` 와 `-` 중 아무거나 써도 결과가 같다
-- 기호 다음에 **한 칸 띄운다**
-- 순서 있는 목록 안에 순서 없는 목록을 넣는 것도 된다
-
-</div>
-<div>
-
-<div class="kicker">미리보기</div>
-
-* 과일
-    - 사과
-    - 배
-- 채소
-    * 오이
-    * 당근
-
-</div>
-</Grid>
-
----
-
-### #04-7. 두 목록을 섞어 쓰기
-
-<Grid cols="2">
+<Grid cols="2" gap="28" align="start">
 <div>
 
 ```md
@@ -701,29 +711,32 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
     1. 파일 만들기
     1. 저장하기
 ```
+
+</div>
+<div>
+
+<div class="kicker">미리보기</div>
+
+1. 준비물
+    * 노트북
+    * 충전기
+1. 실습 순서
+    1. 파일 만들기
+    1. 저장하기
+
+</div>
+</Grid>
 
 <Callout kind="eli5">
 큰 순서는 번호로, 그 안의 준비물처럼 순서가 상관없는 것은 점으로 적는다. 장보기 목록을 쓸 때와 같다.
 </Callout>
 
 </div>
-<div>
-
-<div class="kicker">미리보기</div>
-
-1. 준비물
-    * 노트북
-    * 충전기
-1. 실습 순서
-    1. 파일 만들기
-    1. 저장하기
-
-</div>
 </Grid>
 
 ---
 
-### #04-8. 글자 강조
+### #04-6. 글자 강조
 
 <Grid cols="2">
 <div>
@@ -767,23 +780,32 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
 
 ---
 
-### #04-9. 링크
+### #04-7. 링크와 이미지
+
+<Grid cols="2" align="start">
+<div>
+
+<div class="kicker">링크 <code>[글자](주소)</code></div>
 
 ```md
-[구글](https://www.google.com) 에서 검색한다.
+[구글](https://www.google.com "검색 엔진") 에서 검색한다.
+
+[구글][g] 에서 검색한다.
+
+[g]: https://www.google.com
 ```
 
-- 형식: `[화면에 보일 글자](주소)`
+- `[화면에 보일 글자](주소)`. 큰따옴표 안 글자는 마우스를 올렸을 때 뜨는 설명
 - 두 번째 방법은 주소를 글 아래쪽에 따로 모아 둔다. 같은 주소를 여러 번 쓸 때 편하다
-- 큰따옴표 안의 글자는 마우스를 올렸을 때 뜨는 설명이다
 
 <div class="kicker">미리보기</div>
 
-[구글](https://www.google.com) 에서 검색한다.
+[구글](https://www.google.com "검색 엔진") 에서 검색한다.
 
----
+</div>
+<div>
 
-### #04-10. 이미지
+<div class="kicker ai">이미지 <code>![설명](경로)</code></div>
 
 ```md
 ![고양이 사진](images/cat.png)
@@ -791,12 +813,14 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
 
 - 링크 앞에 **느낌표 `!`** 하나만 붙이면 이미지가 된다
 - 대괄호 안 글자는 그림이 안 열릴 때 대신 보이는 설명이다
-- 주소 자리에 인터넷 주소 대신 내 컴퓨터의 파일 경로를 써도 된다.
-- md 파일이 있는 폴더를 기준으로 적는다
+- 주소 자리에 인터넷 주소 대신 내 컴퓨터의 파일 경로를 써도 된다. md 파일이 있는 폴더를 기준으로 적는다
+
+</div>
+</Grid>
 
 ---
 
-### #04-11. 표
+### #04-8. 표
 
 <Grid cols="2">
 <div>
@@ -830,7 +854,7 @@ md 파일을 연 상태에서 확장 프로그램 아이콘 → **Markdown Reade
 
 ---
 
-### #04-12. 인용문과 구분선
+### #04-9. 인용문과 구분선
 
 <Grid cols="2">
 <div>
@@ -873,7 +897,7 @@ ___
 
 ---
 
-### #04-13. 체크박스
+### #04-10. 체크박스
 
 <Grid cols="2">
 <div>
@@ -907,7 +931,7 @@ ___
 
 ---
 
-### #04-14. 코드 블록
+### #04-11. 코드 블록
 
 역따옴표(`` ` ``) 세 개로 코드를 위아래에서 감싸고 여는 쪽 뒤에 언어 이름을 쓴다. 역따옴표는 키보드 `1` 왼쪽, `~` 와 같은 키에 있다.
 
@@ -956,7 +980,7 @@ WHERE score >= 90;
 
 ---
 
-### #04-15. 언어 이름 적는 법
+### #04-12. 언어 이름 적는 법
 
 <Grid cols="2" align="start">
 <div>
@@ -987,7 +1011,7 @@ WHERE score >= 90;
 
 ---
 
-### #04-16. 수식 — 문장 안에 넣기
+### #04-13. 수식 — 문장 안에 넣기
 
 달러 기호 `$` 한 개로 감싸면 문장 속에 수식이 들어간다.
 
@@ -1008,7 +1032,7 @@ WHERE score >= 90;
 
 ---
 
-### #04-17. 수식 — 따로 한 줄에 크게
+### #04-14. 수식 — 따로 한 줄에 크게
 
 - `$$` 두 개로 위아래를 감싸면 수식이 가운데에 크게 놓인다. 
 - `&` 는 줄을 맞출 기준점, `\\` 는 줄바꿈이다.
@@ -1033,7 +1057,7 @@ $$
 
 ---
 
-### #04-18. 자주 쓰는 수학 기호
+### #04-15. 자주 쓰는 수학 기호
 
 <Grid cols="2" align="start">
 <div>
@@ -1065,7 +1089,7 @@ $$
 
 ---
 
-### #04-19. 통계에서 쓰는 기호
+### #04-16. 통계에서 쓰는 기호
 
 | 기호 | 쓰는 법 | 뜻 |
 |:--:|:--|:--|
@@ -1080,7 +1104,7 @@ $$
 
 ---
 
-### #04-20. 기호를 글자 그대로 쓰고 싶을 때
+### #04-17. 기호를 글자 그대로 쓰고 싶을 때
 
 `*` 이나 `#` 를 서식이 아니라 글자로 보여 주려면 앞에 **역슬래시 `\`** 를 붙인다.
 
@@ -1178,94 +1202,3 @@ $$
 | 수식 | `$문장 속$` · `$$따로 한 줄$$` |
 
 <span class="muted">기호 뒤 공백 한 칸과 빈 줄 하나, 이 두 가지만 지켜도 대부분 제대로 나온다.</span>
-
----
-class: dense
----
-
-## #08. 연습문제 — 고장 난 마크다운 고치기
-
-아래는 `practice.md` 에 쓴 수업 노트인데 미리보기가 엉망으로 나온다. **틀린 곳 7군데**를 찾아 고쳐 보자.
-
-<Grid cols="2">
-<div>
-
-```md
-#마크다운 1일차 노트
-
-## 오늘 한 일
-
-1.VS Code 설치
-    - 한국어 팩
-  - Markdown All in One 익스텐션
-1. **공식 홈페이지 둘러보기
-
-## 점검
-
-| 항목 | 상태 |
-| 글자 크기 16 | 완료 |
-
--[x] practice.md 만들기
-- [] 첫 코드 실행
-```
-
-</div>
-<div>
-
-<Steps color="ok">
-<li>VS Code에서 <code>practice.md</code> 를 만들고 왼쪽 코드를 그대로 붙여 넣는다</li>
-<li><code>Ctrl + K</code> → <code>V</code> 로 미리보기를 옆에 띄운다</li>
-<li>미리보기를 보며 제목, 목록, 굵은 글씨, 표, 체크박스가 제대로 나올 때까지 고친다</li>
-</Steps>
-
-<Callout kind="tip" title="힌트">
-대부분 <b>기호 뒤 공백 한 칸</b>, <b>들여쓰기 칸 수</b>, <b>짝이 맞지 않는 기호</b> 문제다. 막히면 <b>#05. 자주 틀리는 것</b>과 <b>#07. 학습정리</b>를 다시 본다.
-</Callout>
-
-</div>
-</Grid>
-
----
-class: dense
----
-
-### #08-1. 연습문제 풀이
-
-<Grid cols="2">
-<div>
-
-```md
-# 마크다운 1일차 노트
-
-## 오늘 한 일
-
-1. VS Code 설치
-    - 한국어 팩
-    - Markdown All in One 익스텐션
-1. **공식 홈페이지** 둘러보기
-
-## 점검
-
-| 항목 | 상태 |
-|:--|:--|
-| 글자 크기 16 | 완료 |
-
-- [x] practice.md 만들기
-- [ ] 첫 코드 실행
-```
-
-</div>
-<div>
-
-| 줄 | 고친 내용 |
-|:--|:--|
-| 1 | `#` 뒤에 공백 |
-| 5 | `1.` 뒤에 공백 |
-| 7 | 들여쓰기를 위 항목과 같은 4칸으로 |
-| 8 | 닫는 `**` 추가 |
-| 13 | 표의 구분 줄 `\|:--\|:--\|` 추가 |
-| 16 | `-` 뒤에 공백 |
-| 17 | `[ ]` 안에 공백 |
-
-</div>
-</Grid>
